@@ -3,7 +3,7 @@ import "./styles/globals.scss";
 import "./styles/markdown.scss";
 import "./styles/highlight.scss";
 import { getClientConfig } from "./config/client";
-import { type Metadata } from 'next';
+import { type Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "ChatGPT Next Web",
@@ -34,6 +34,11 @@ export default function RootLayout({
         <meta name="config" content={JSON.stringify(getClientConfig())} />
         <link rel="manifest" href="/site.webmanifest"></link>
         <script src="/serviceWorkerRegister.js" defer></script>
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4320890345228804"
+          crossOrigin="anonymous"
+        ></script>
       </head>
       <body>{children}</body>
     </html>
